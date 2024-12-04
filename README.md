@@ -1,13 +1,6 @@
-### THIS REPO IS NO LONGER MAINTAINED. 
-### For a supported plugin please use Jackett.
-
-
-
-
-
 **qBittorrent** comes with a few search plugins. Although these are enough for most users, if you wish to add more search engines, you can download **Prowlarr** configure the **prowlarr qBittorrent plugin** (essentially, set the API key).
 
-**[prowlarr](https://github.com/prowlarr/prowlarr)** is a server program that provides support for more than 400 torrent sites (public and private). You may download the plugin at [this address](https://raw.githubusercontent.com/swannie-eire/prowlarr-qbittorrent-plugin/main/prowlarr.py).
+**[prowlarr](https://github.com/prowlarr/prowlarr)** is a server program that provides support for more than 400 torrent sites (public and private). You may download the plugin at [this address](https://github.com/lizardkingDOTca/prowlarr-qbittorrent-plugin/raw/refs/heads/main/prowlarrprivate.py).
 
 ### Disable the prowlarr plugin
 By default, the prowlarr plugin is enabled in qBittorrent. If you want to disable it, follow these steps:
@@ -51,7 +44,7 @@ $ cat config/data/qBittorrent/nova3/engines/prowlarr.json
 | Property |  Default value |  Description |
 |---|---|---|
 | api_key | YOUR_API_KEY_HERE | prowlarr API Key (you can find it int Settings > General > Security) |
-| tracker_first | false | (false/true) add tracker name to the beginning of search result |
+| indexerIds | -2 | tracker ids coma separated (-2 show all) |
 | url | http://127.0.0.1:9696 | prowlarr URL (without the end slash) |
 
 API Key in prowlarr web UI:
